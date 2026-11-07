@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Goran Drive MCP - privatna integracija odabranih privitaka poslovne pošte i Google Drivea.">
+  <title>Početna | Goran Drive MCP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Goran Drive MCP</h1><p>Privatna integracija za Google Drive</p></header>
+<main>
+<section>
+<h2>Svrha aplikacije</h2>
+<p>Goran Drive MCP privatni je alat za prijenos pojedinačno odabranih privitaka poslovne pošte u mape Google Drivea koje koristi ovlašteni korisnik. Namijenjen je osobnoj uporabi vlasnika i ograničenom broju ovlaštenih korisnika, a ne javnoj distribuciji.</p>
+<p>Tipičan tok je ChatGPT → MCP alat za poslovnu poštu → MCP-17 → rclone → Google Drive. Korisnik pokreće prijenos i bira što će spremiti.</p>
+</section>
+<section>
+<h2>Zašto je potreban Google pristup?</h2>
+<p>Integracija koristi Google Drive API za izradu odredišnih mapa i prijenos odabranih datoteka. Planirani OAuth opseg je <code>drive.file</code>, koji ne daje automatski neograničen pristup cijelom Driveu. Stvarna prava ovise o dodijeljenom ovlaštenju i Googleovim pravilima.</p>
+<p>Googleova autorizacija obavlja se kroz Googleovo službeno sučelje. Ova javna stranica ne prihvaća vjerodajnice, ne pokreće autorizaciju i ne vidi korisničke dokumente.</p>
+</section>
+<section>
+<h2>Privatnost i sigurnost</h2>
+<p>Datoteke ostaju u korisnikovu poslovnom sustavu i/ili njegovu Google Driveu. Javni GitHub Pages sadržaj ne pohranjuje privitke, tokene ni sadržaj Drivea. Pristup se može opozvati u postavkama Google računa.</p>
+<p>Prije autorizacije pročitajte <a href="privacy.html">Politiku privatnosti</a> i <a href="terms.html">Uvjete uporabe</a>.</p>
+</section>
+</main>
+<footer>
+<nav aria-label="Poveznice"><a href="index.html">Početna</a><a href="privacy.html">Politika privatnosti</a><a href="terms.html">Uvjeti uporabe</a></nav>
+<small>Ova je stranica informativna. Ne služi za prijavu i ne pohranjuje OAuth tokene.</small>
+</footer>
+</body></html>
